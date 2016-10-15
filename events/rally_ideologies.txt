@@ -2,339 +2,354 @@ add_namespace = rally_ideologies
 
 #Islamist Gathering
 country_event = {
-	id = rally_ideologies.0
-	title = rally_ideologies.0.t
-	desc = rally_ideologies.0.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		islamist > 0.01
-		NOT = { has_government = islamist }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-		
-		modifier = {
-			factor = 3
-			AND = {
-				NOT = { has_country_flag = sunni_islam }
-				NOT = { has_country_flag = shia_islam }
-			}
-		}
-		
-		modifier = {
-			factor = 3
-			OR = {
-				has_government = fascist
-				has_government = nationalist
-			}
-		}
-		
-		modifier = {
-			factor = 5
-			has_government = communist
-		}
-		
-		modifier = {
-			factor = 0.92
-			threat > 0.1
-		}
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.0.o1
-		add_popularity = {
-			ideology = islamist
-			popularity = 0.02
-		}
-	}
+    id = rally_ideologies.0
+    title = rally_ideologies.0.t
+    desc = rally_ideologies.0.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        islamist > 0.01
+        NOT = { has_government = islamist }
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+        
+        modifier = {
+            factor = 3
+            AND = {
+                NOT = { has_country_flag = sunni_islam }
+                NOT = { has_country_flag = shia_islam }
+            }
+        }
+        
+        modifier = {
+            factor = 3
+            OR = {
+                has_government = fascist
+                has_government = nationalist
+            }
+        }
+        
+        modifier = {
+            factor = 5
+            has_government = communist
+        }
+        
+        modifier = {
+            factor = 0.92
+            threat > 0.1
+        }
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.0.o1
+        add_popularity = {
+            ideology = islamist
+            popularity = 0.02
+        }
+    }
 }
 
 #Fascist Gathering
 country_event = {
-	id = rally_ideologies.1
-	title = rally_ideologies.1.t
-	desc = rally_ideologies.1.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		fascist > 0.01
+    id = rally_ideologies.1
+    title = rally_ideologies.1.t
+    desc = rally_ideologies.1.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        fascist > 0.01
         NOT = { has_government = fascist }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.1.o1
-		add_popularity = {
-			ideology = fascist
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.1.o1
+        add_popularity = {
+            ideology = fascist
+            popularity = 0.02
+        }
+    }
 }
 
 #Nationalist Gathering
 country_event = {
-	id = rally_ideologies.2
-	title = rally_ideologies.2.t
-	desc = rally_ideologies.2.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		nationalist > 0.01
+    id = rally_ideologies.2
+    title = rally_ideologies.2.t
+    desc = rally_ideologies.2.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        nationalist > 0.01
         NOT = { has_government = nationalist }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.2.o1
-		add_popularity = {
-			ideology = nationalist
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.2.o1
+        add_popularity = {
+            ideology = nationalist
+            popularity = 0.02
+        }
+    }
 }
 
 #Monarchist Gathering
 country_event = {
-	id = rally_ideologies.3
-	title = rally_ideologies.3.t
-	desc = rally_ideologies.3.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		monarchist > 0.01
+    id = rally_ideologies.3
+    title = rally_ideologies.3.t
+    desc = rally_ideologies.3.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        monarchist > 0.01
         NOT = { has_government = monarchist }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.3.o1
-		add_popularity = {
-			ideology = monarchist
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.3.o1
+        add_popularity = {
+            ideology = monarchist
+            popularity = 0.02
+        }
+    }
 }
 
 #Reactionary Gathering
 country_event = {
-	id = rally_ideologies.4
-	title = rally_ideologies.4.t
-	desc = rally_ideologies.4.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		reactionary > 0.01
+    id = rally_ideologies.4
+    title = rally_ideologies.4.t
+    desc = rally_ideologies.4.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        reactionary > 0.01
         NOT = { has_government = reactionary }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.4.o1
-		add_popularity = {
-			ideology = reactionary
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.4.o1
+        add_popularity = {
+            ideology = reactionary
+            popularity = 0.02
+        }
+    }
 }
 
 #Conservative Gathering
 country_event = {
-	id = rally_ideologies.5
-	title = rally_ideologies.5.t
-	desc = rally_ideologies.5.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		conservative > 0.01
+    id = rally_ideologies.5
+    title = rally_ideologies.5.t
+    desc = rally_ideologies.5.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        conservative > 0.01
         NOT = { has_government = conservative }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.5.o1
-		add_popularity = {
-			ideology = conservative
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.5.o1
+        add_popularity = {
+            ideology = conservative
+            popularity = 0.02
+        }
+    }
 }
 
 #Market Liberal Gathering
 country_event = {
-	id = rally_ideologies.6
-	title = rally_ideologies.6.t
-	desc = rally_ideologies.6.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		market_liberal > 0.01
+    id = rally_ideologies.6
+    title = rally_ideologies.6.t
+    desc = rally_ideologies.6.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        market_liberal > 0.01
         NOT = { has_government = market_liberal }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.1.o1
-		add_popularity = {
-			ideology = market_liberal
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.1.o1
+        add_popularity = {
+            ideology = market_liberal
+            popularity = 0.02
+        }
+    }
 }
 
 #Social Liberal Gathering
 country_event = {
-	id = rally_ideologies.7
-	title = rally_ideologies.7.t
-	desc = rally_ideologies.7.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		social_liberal > 0.01
+    id = rally_ideologies.7
+    title = rally_ideologies.7.t
+    desc = rally_ideologies.7.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        social_liberal > 0.01
         NOT = { has_government = social_liberal }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.7.o1
-		add_popularity = {
-			ideology = social_liberal
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.7.o1
+        add_popularity = {
+            ideology = social_liberal
+            popularity = 0.02
+        }
+    }
 }
 
 #Social Democratic Gathering
 country_event = {
-	id = rally_ideologies.8
-	title = rally_ideologies.8.t
-	desc = rally_ideologies.8.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		social_democrat > 0.01
+    id = rally_ideologies.8
+    title = rally_ideologies.8.t
+    desc = rally_ideologies.8.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        social_democrat > 0.01
         NOT = { has_government = social_democrat }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.8.o1
-		add_popularity = {
-			ideology = social_democrat
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.8.o1
+        add_popularity = {
+            ideology = social_democrat
+            popularity = 0.02
+        }
+    }
 }
 
 #Progressive Gathering
 country_event = {
-	id = rally_ideologies.9
-	title = rally_ideologies.9.t
-	desc = rally_ideologies.9.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		progressive > 0.01
+    id = rally_ideologies.9
+    title = rally_ideologies.9.t
+    desc = rally_ideologies.9.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        progressive > 0.01
         NOT = { has_government = progressive }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.9.o1
-		add_popularity = {
-			ideology = progressive
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.9.o1
+        add_popularity = {
+            ideology = progressive
+            popularity = 0.02
+        }
+    }
 }
 
 #Democratic Socialist Gathering
 country_event = {
-	id = rally_ideologies.10
-	title = rally_ideologies.10.t
-	desc = rally_ideologies.10.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		democratic_socialist > 0.01
+    id = rally_ideologies.10
+    title = rally_ideologies.10.t
+    desc = rally_ideologies.10.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        democratic_socialist > 0.01
         NOT = { has_government = democratic_socialist }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.10.o1
-		add_popularity = {
-			ideology = democratic_socialist
-			popularity = 0.02
-		}
-	}
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.10.o1
+        add_popularity = {
+            ideology = democratic_socialist
+            popularity = 0.02
+        }
+    }
 }
 
 #Communist Gathering
 country_event = {
-	id = rally_ideologies.11
-	title = rally_ideologies.11.t
-	desc = rally_ideologies.11.d
-	picture = GFX_report_event_rally_gathering
-	
-	trigger = {
-		communist > 0.01
+    id = rally_ideologies.11
+    title = rally_ideologies.11.t
+    desc = rally_ideologies.11.d
+    picture = GFX_report_event_rally_gathering
+    
+    trigger = {
+        communist > 0.01
         NOT = { has_government = communist }
-	}
-	
-	mean_time_to_happen = {
-		days = 1000
-	}
-	
-	option = { # Alright. Moving on.
-		name = rally_ideologies.11.o1
-		add_popularity = {
-			ideology = communist
-			popularity = 0.02
-		}
-	}
-	option = { # The government and i dissagre.
-		name = rally_ideologies.11.o2
-		add_popularity = {
-			ideology = communist
-			popularity = 0.01
-		}
-	}
-	option = { # Send the police to disperce the demonstration.
-		name = rally_ideologies.11.o3
-	}
-	option = { # Send the police and arest the leaders
-		name = rally_ideologies.11.o4
-	}
+        NOT = { has_country_flag = flag_is_dicatorship }
+    }
+    
+    mean_time_to_happen = {
+        days = 1000
+    }
+    
+    option = { # Alright. Moving on.
+        name = rally_ideologies.11.o1
+        add_popularity = {
+            ideology = communist
+            popularity = 0.02
+        }
+    }
+    option = { # The government and i dissagre.
+        name = rally_ideologies.11.o2
+        add_popularity = {
+            ideology = communist
+            popularity = 0.01
+        }
+    }
+    option = { # Send the police to disperce the demonstration.
+        name = rally_ideologies.11.o3
+        random_list = {
+            30 = {}
+            40 = { country_event = { days = 1 id = riot.0 } }
+            30 = { country_event = { days = 1 id = rito_ideology.0 } }
+        }
+    }
+    option = { # Send the police and arest the leaders.
+        name = rally_ideologies.11.o4
+        add_popularity = {
+            ideology = communist
+            popularity = 0.02
+        }
+        random_list = {
+            50 = {}
+            30 = { country_event = { days = 1 id = riot.0 } }
+            20 = { country_event = { days = 1 id = rito_ideology.0 } }
+        }
+    }
 }
