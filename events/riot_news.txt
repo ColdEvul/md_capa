@@ -1,0 +1,74 @@
+add_namespace = riot_news
+
+news_event = {
+	id = riot_news.0 # Riot have been stoped by the police
+	title = riot_news.0.t
+	desc = riot_news.0.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = riot_news.0.o1
+        clr_country_flag = rally_flag_police_sent
+        clr_country_flag = rally_flag_military_sent
+	}
+}
+news_event = {
+	id = riot_news.1 # Riot have been stoped by the military
+	title = riot_news.1.t
+	desc = riot_news.1.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = riot_news.1.o1
+        clr_country_flag = rally_flag_police_sent
+        clr_country_flag = rally_flag_military_sent
+	}
+}
+news_event = {
+	id = riot_news.2 # Riot have been stoped by both the military and the police.
+	title = riot_news.2.t
+	desc = riot_news.2.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = riot_news.2.o1
+        clr_country_flag = rally_flag_police_sent
+        clr_country_flag = rally_flag_military_sent
+	}
+}
+news_event = {
+	id = riot_news.3 # Demonstraters killed!
+	title = riot_news.3.t
+	desc = riot_news.3.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = { # The horrir!
+		name = riot_news.3.o1
+        
+        add_national_unity = -0.01
+        add_manpower = -5
+    }
+}
+news_event = {
+	id = riot_news.4 # Demonstraters killed!
+	title = riot_news.4.t
+	desc = riot_news.4.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = riot_news.4.o1
+
+        add_national_unity = -0.02
+        add_manpower = -10
+    }
+}

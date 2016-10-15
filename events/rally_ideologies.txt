@@ -311,7 +311,6 @@ country_event = {
     trigger = {
         communist > 0.01
         NOT = { has_government = communist }
-        NOT = { has_country_flag = flag_is_dicatorship }
     }
     
     mean_time_to_happen = {
@@ -332,24 +331,39 @@ country_event = {
             popularity = 0.01
         }
     }
-    option = { # Send the police to disperce the demonstration.
+    option = { # Send the police to disperce the rally.
         name = rally_ideologies.11.o3
+        set_country_flag = rally_flag_police_sent
+
         random_list = {
-            30 = {}
+            25 = { news_event = { days = 1 id = rally_news.0 } }
+             5 = { news_event = { days = 1 id = rally_news.2 } }
             40 = { country_event = { days = 1 id = riot.0 } }
-            30 = { country_event = { days = 1 id = rito_ideology.0 } }
+            30 = { country_event = { days = 1 id = riot.0 } }
+            # 30 = { country_event = { days = 1 id = rito_ideology.0 } }
         }
     }
-    option = { # Send the police and arest the leaders.
+    option = { # Send the military to disperce the rally.
         name = rally_ideologies.11.o4
-        add_popularity = {
-            ideology = communist
-            popularity = 0.02
+        trigger = {
+            OR = {
+                has_country_flag = flag_is_dictatorship
+                has_government = conservative
+                has_government = reactionary
+                has_government = nationalist
+                has_government = monarchist
+                has_government = fascist
+                has_government = communist
+            }
         }
+        set_country_flag = rally_flag_military_sent
+        
         random_list = {
-            50 = {}
+            40 = { news_event = { days = 1 id = rally_news.1 } }
+            10 = { news_event = { days = 1 id = rally_news.3 } }
             30 = { country_event = { days = 1 id = riot.0 } }
-            20 = { country_event = { days = 1 id = rito_ideology.0 } }
+            20 = { country_event = { days = 1 id = riot.0 } }
+            # 20 = { country_event = { days = 1 id = rito_ideology.0 } }
         }
     }
 }

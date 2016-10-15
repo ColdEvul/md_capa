@@ -1,0 +1,64 @@
+add_namespace = rally_news
+
+news_event = {
+	id = rally_news.0 # Police have stoped the rally.
+	title = rally_news.0.t
+	desc = rally_news.0.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rally_news.0.o1
+        clr_country_flag = rally_flag_police_sent
+        clr_country_flag = rally_flag_military_sent
+	}
+}
+news_event = {
+	id = rally_news.1 # Millitar have stoped the rally.
+	title = rally_news.1.t
+	desc = rally_news.1.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rally_news.1.o1
+        clr_country_flag = rally_flag_police_sent
+        clr_country_flag = rally_flag_military_sent
+	}
+}
+news_event = {
+	id = rally_news.2 # Demonstraters were killed by police when stoping rally.
+	title = rally_news.2.t
+	desc = rally_news.2.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rally_news.2.o1
+        clr_country_flag = rally_flag_police_sent
+        clr_country_flag = rally_flag_military_sent
+        
+        add_national_unity = -0.01
+        add_manpower = -5
+	}
+}
+news_event = {
+	id = rally_news.3 # Demonstraters were killed by millitary when stoping rally.
+	title = rally_news.3.t
+	desc = rally_news.3.d
+	picture = GFX_report_event_rally_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rally_news.3.o1
+        clr_country_flag = rally_flag_police_sent
+        clr_country_flag = rally_flag_military_sent
+        
+        add_national_unity = -0.02
+        add_manpower = -10
+	}
+}

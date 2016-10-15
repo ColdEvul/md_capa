@@ -1,0 +1,169 @@
+add_namespace = riot
+
+country_event = {
+    id = riot.0 # Rally turned in to a riot!
+    title = riot.0.t
+    desc = riot.0.d
+    picture = GFX_report_event_rally_gathering
+    
+    is_triggered_only = yes
+    trigger = {}
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = { 
+        name = riot.0.o3 # Stop it!
+        trigger = {
+            has_country_flag = rally_flag_police_sent
+            NOT = { has_country_flag = rally_flag_military_sent }
+        }
+       
+        random_list = {
+            35 = { news_event = { days = 1 id = riot_news.3 } }
+            15 = { news_event = { days = 1 id = riot_news.4 } }
+            50 = { }
+        }
+        random_list = {
+            60 = { news_event = { days = 2 id = riot_news.0 } } # End
+            40 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+    option = { 
+        name = riot.0.o4 # Stop it!
+        trigger = {
+            has_country_flag = rally_flag_military_sent
+            NOT = { has_country_flag = rally_flag_police_sent }
+        }
+        
+        random_list = {
+            50 = { news_event = { days = 1 id = riot_news.3 } }
+            40 = { news_event = { days = 1 id = riot_news.4 } }
+            10 = { }
+        }
+        random_list = {
+            65 = { news_event = { days = 2 id = riot_news.1 } } # End
+            35 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+    option = { 
+        name = riot.0.o5 # Stop it!
+        trigger = {
+            has_country_flag = rally_flag_police_sent
+            has_country_flag = rally_flag_military_sent
+        }
+
+        random_list = {
+            40 = { news_event = { days = 1 id = riot_news.3 } }
+            50 = { news_event = { days = 1 id = riot_news.4 } }
+            10 = { }
+        }
+        random_list = {
+            70 = { news_event = { days = 2 id = riot_news.2 } } # End
+            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+    option = { # Send police to stop the riot!
+        name = riot.0.o1
+        trigger = { NOT = { has_country_flag = rally_flag_police_sent } }
+        set_country_flag = rally_flag_police_sent
+    }
+    option = { # Send military to stop the riot!
+        name = riot.0.o2
+        trigger = { NOT = { has_country_flag = rally_flag_military_sent } }
+        set_country_flag = rally_flag_military_sent
+    }
+}
+
+country_event = {
+    id = riot.1 # Riot continues!
+    title = riot.1.t
+    desc = riot.1.d
+    picture = GFX_report_event_rally_gathering
+    
+    is_triggered_only = yes
+    trigger = {}
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = { 
+        name = riot.1.o3 # Stop it!
+        trigger = {
+            has_country_flag = rally_flag_police_sent
+            NOT = { has_country_flag = rally_flag_military_sent }
+        }
+       
+        random_list = {
+            35 = { news_event = { days = 1 id = riot_news.3 } }
+            15 = { news_event = { days = 1 id = riot_news.4 } }
+            50 = { }
+        }
+        random_list = {
+            60 = { news_event = { days = 2 id = riot_news.0 } } # End
+            40 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+    option = { 
+        name = riot.1.o4 # Stop it!
+        trigger = {
+            has_country_flag = rally_flag_military_sent
+            NOT = { has_country_flag = rally_flag_police_sent }
+        }
+        
+        random_list = {
+            50 = { news_event = { days = 1 id = riot_news.3 } }
+            40 = { news_event = { days = 1 id = riot_news.4 } }
+            10 = { }
+        }
+        random_list = {
+            65 = { news_event = { days = 2 id = riot_news.1 } } # End
+            35 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+    option = { 
+        name = riot.1.o5 # Stop it!
+        trigger = {
+            has_country_flag = rally_flag_police_sent
+            has_country_flag = rally_flag_military_sent
+        }
+
+        random_list = {
+            40 = { news_event = { days = 1 id = riot_news.3 } }
+            50 = { news_event = { days = 1 id = riot_news.4 } }
+            10 = { }
+        }
+        random_list = {
+            70 = { news_event = { days = 2 id = riot_news.2 } } # End
+            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+    option = { # Send police to stop the riot!
+        name = riot.1.o1
+        trigger = { NOT = { has_country_flag = rally_flag_police_sent } }
+        set_country_flag = rally_flag_police_sent
+        random_list = {
+            40 = { news_event = { days = 1 id = riot_news.3 } }
+            50 = { news_event = { days = 1 id = riot_news.4 } }
+            10 = { }
+        }
+        random_list = {
+            70 = { news_event = { days = 2 id = riot_news.2 } } # End
+            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+    option = { # Send military to stop the riot!
+        name = riot.1.o2
+        trigger = { NOT = { has_country_flag = rally_flag_military_sent } }
+        set_country_flag = rally_flag_military_sent
+        random_list = {
+            40 = { news_event = { days = 1 id = riot_news.3 } }
+            50 = { news_event = { days = 1 id = riot_news.4 } }
+            10 = { }
+        }
+        random_list = {
+            70 = { news_event = { days = 2 id = riot_news.2 } } # End
+            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+        }
+    }
+}
