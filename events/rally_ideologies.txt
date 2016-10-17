@@ -311,6 +311,8 @@ country_event = {
     trigger = {
         communist > 0.01
         NOT = { has_government = communist }
+        NOT = { has_country_flag = rally_flag_police_sent }
+        NOT = { has_country_flag = rally_flag_military_sent }
     }
     
     mean_time_to_happen = {

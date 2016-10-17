@@ -1,0 +1,6 @@
+﻿l_english:
+ civilian_economy_market:0 "Full Market Economy"
+ civilian_economy_semimarket:0 "Market Economy"
+ civilian_economy_mixed:0 "Mixed Economy"
+ civilian_economy_semiplaned:0 "Semi-Planed Economy"
+ civilian_economy_planed:0 "Planed Economy"
