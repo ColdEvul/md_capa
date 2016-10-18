@@ -12,6 +12,7 @@
                         TAG = USA
                         has_government = conservative
                     }
+                    has_idea = idea_eu_member
                     has_government = market_liberal
                 }
             }
