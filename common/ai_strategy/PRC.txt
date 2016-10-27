@@ -1,0 +1,42 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+RelationModifier_PRC_befriend_PRK = {
+    enable = {
+        tag = PRC
+        has_government = communist
+        country_exists = PRK
+    }
+    abort = {
+        OR = {
+            NOT = { country_exists = PRC }
+            NOT = { has_government = communist }
+            PRK = { NOT = { has_government = communist } }
+        }
+    }
+    
+    ai_strategy = {
+        type = befriend
+        id = "PRK"
+        value = 200
+    }
+    ai_strategy = {
+        type = influence
+        id = "PRK"
+        value = 200
+    }
+    ai_strategy = {
+        type = protect
+        id = "PRK"
+        value = 200
+    }
+}

@@ -341,7 +341,6 @@ country_event = {
             25 = { news_event = { days = 1 id = rally_news.0 } }
              5 = { news_event = { days = 1 id = rally_news.2 } }
             40 = { country_event = { days = 1 id = riot.0 } }
-            30 = { country_event = { days = 1 id = riot.0 } }
             # 30 = { country_event = { days = 1 id = rito_ideology.0 } }
         }
     }
@@ -364,7 +363,6 @@ country_event = {
             40 = { news_event = { days = 1 id = rally_news.1 } }
             10 = { news_event = { days = 1 id = rally_news.3 } }
             30 = { country_event = { days = 1 id = riot.0 } }
-            20 = { country_event = { days = 1 id = riot.0 } }
             # 20 = { country_event = { days = 1 id = rito_ideology.0 } }
         }
     }

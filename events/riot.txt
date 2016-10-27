@@ -25,8 +25,8 @@ country_event = {
             50 = { }
         }
         random_list = {
-            60 = { news_event = { days = 2 id = riot_news.0 } } # End
-            40 = { country_event = { days = 2 id = riot.1 } } # Continue
+            60 = { news_event = { days = 5 id = riot_news.0 } } # End
+            40 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
     option = { 
@@ -42,8 +42,8 @@ country_event = {
             10 = { }
         }
         random_list = {
-            65 = { news_event = { days = 2 id = riot_news.1 } } # End
-            35 = { country_event = { days = 2 id = riot.1 } } # Continue
+            65 = { news_event = { days = 5 id = riot_news.1 } } # End
+            35 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
     option = { 
@@ -59,8 +59,8 @@ country_event = {
             10 = { }
         }
         random_list = {
-            70 = { news_event = { days = 2 id = riot_news.2 } } # End
-            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+            70 = { news_event = { days = 5 id = riot_news.2 } } # End
+            30 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
     option = { # Send police to stop the riot!
@@ -100,8 +100,8 @@ country_event = {
             50 = { }
         }
         random_list = {
-            60 = { news_event = { days = 2 id = riot_news.0 } } # End
-            40 = { country_event = { days = 2 id = riot.1 } } # Continue
+            60 = { news_event = { days = 5 id = riot_news.0 } } # End
+            40 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
     option = { 
@@ -117,8 +117,8 @@ country_event = {
             10 = { }
         }
         random_list = {
-            65 = { news_event = { days = 2 id = riot_news.1 } } # End
-            35 = { country_event = { days = 2 id = riot.1 } } # Continue
+            65 = { news_event = { days = 5 id = riot_news.1 } } # End
+            35 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
     option = { 
@@ -134,8 +134,8 @@ country_event = {
             10 = { }
         }
         random_list = {
-            70 = { news_event = { days = 2 id = riot_news.2 } } # End
-            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+            70 = { news_event = { days = 5 id = riot_news.2 } } # End
+            30 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
     option = { # Send police to stop the riot!
@@ -148,8 +148,8 @@ country_event = {
             10 = { }
         }
         random_list = {
-            70 = { news_event = { days = 2 id = riot_news.2 } } # End
-            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+            70 = { news_event = { days = 5 id = riot_news.2 } } # End
+            30 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
     option = { # Send military to stop the riot!
@@ -162,8 +162,8 @@ country_event = {
             10 = { }
         }
         random_list = {
-            70 = { news_event = { days = 2 id = riot_news.2 } } # End
-            30 = { country_event = { days = 2 id = riot.1 } } # Continue
+            70 = { news_event = { days = 5 id = riot_news.2 } } # End
+            30 = { country_event = { days = 5 id = riot.1 } } # Continue
         }
     }
 }
